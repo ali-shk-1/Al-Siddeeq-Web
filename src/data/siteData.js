@@ -109,5 +109,7 @@ export const branches = {
     label: 'Girls Branch',
     address: 'House #14-A, Sector 3, Khayaban-e-Sir Syed, Rawalpindi',
     phone: '051-4834045',
+    lat: 33.6318207,
+    lng: 73.0496489,
   },
 };

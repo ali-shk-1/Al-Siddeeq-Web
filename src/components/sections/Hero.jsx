@@ -75,8 +75,8 @@ const Hero = () => {
           <motion.div animate={{ rotate: 360 }} transition={{ duration: 40, repeat: Infinity, ease: 'linear' }} className="absolute w-80 h-80 rounded-full border-2 border-dashed border-brand-blue/20 dark:border-brand-emerald/20" />
           <motion.div animate={{ rotate: -360 }} transition={{ duration: 55, repeat: Infinity, ease: 'linear' }} className="absolute w-[26rem] h-[26rem] rounded-full border border-brand-emerald/15" />
 
-          <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }} className="relative z-10 w-64 h-64 rounded-full bg-white dark:bg-navy-800 shadow-soft shadow-glow flex items-center justify-center animate-float p-8">
-            <img src={monogram} alt="School monogram" className="w-full h-full object-contain" />
+          <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }} className="relative z-10 w-64 h-64 rounded-full bg-gradient-to-br from-blue-50 to-emerald-50 dark:from-navy-700 dark:to-navy-800 shadow-soft shadow-glow flex items-center justify-center animate-float p-10 overflow-hidden">
+          <img src={monogram} alt="School monogram" className="w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal dark:opacity-90" />
           </motion.div>
 
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.6, duration: 0.6 }} className="absolute top-6 left-0 glass rounded-2xl px-4 py-3 shadow-soft animate-float">

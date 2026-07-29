@@ -53,9 +53,6 @@ const Navbar = () => {
 
         <div className="hidden lg:flex items-center gap-4">
           <ThemeToggle />
-          <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')} className="px-5 py-2.5 rounded-full bg-brand-blue text-white text-sm font-semibold shadow-glow hover:bg-brand-blue-dark hover:scale-105 active:scale-95 transition-all duration-300">
-            <span>Admissions</span>
-          </a>
         </div>
 
         <div className="flex lg:hidden items-center gap-3">
@@ -77,11 +74,7 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <li className="pt-3">
-                <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')} className="block text-center px-5 py-2.5 rounded-full bg-brand-blue text-white text-sm font-semibold">
-                  <span>Admissions</span>
-                </a>
-              </li>
+              
             </ul>
           </motion.div>
         )}
