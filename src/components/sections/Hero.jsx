@@ -58,10 +58,10 @@ const Hero = () => {
           </Reveal>
 
           <Reveal as="up" delay={0.5}>
-            <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-xl">
+            <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-6 max-w-xl">
               {heroCounters.map((item, i) => (
-                <div key={i}>
-                  <p className="text-2xl sm:text-3xl font-bold text-brand-blue dark:text-brand-emerald">
+                <div key={i} className="min-w-0">
+                  <p className="text-lg sm:text-2xl md:text-3xl font-bold text-brand-blue dark:text-brand-emerald leading-tight break-words">
                     {item.value !== null ? <Counter value={item.value} suffix={item.suffix} /> : item.display}
                   </p>
                   <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">{item.label}</p>
@@ -76,7 +76,7 @@ const Hero = () => {
           <motion.div animate={{ rotate: -360 }} transition={{ duration: 55, repeat: Infinity, ease: 'linear' }} className="absolute w-[26rem] h-[26rem] rounded-full border border-brand-emerald/15" />
 
           <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }} className="relative z-10 w-64 h-64 rounded-full bg-gradient-to-br from-blue-50 to-emerald-50 dark:from-navy-700 dark:to-navy-800 shadow-soft shadow-glow flex items-center justify-center animate-float p-10 overflow-hidden">
-          <img src={monogram} alt="School monogram" className="w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal dark:opacity-90" />
+            <img src={monogram} alt="School monogram" className="w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal dark:opacity-90" />
           </motion.div>
 
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.6, duration: 0.6 }} className="absolute top-6 left-0 glass rounded-2xl px-4 py-3 shadow-soft animate-float">
