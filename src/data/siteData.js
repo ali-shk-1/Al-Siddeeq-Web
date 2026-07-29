@@ -102,8 +102,9 @@ export const branches = {
     label: 'Boys Branch',
     address: 'House #186-A, Sector 4-A, Khayaban-e-Sir Syed, Rawalpindi',
     phone: '051-4831802',
-    lat: 33.631547,
-    lng: 73.050170,
+    lat: 33.6312878,
+    lng: 73.0502346,
+
   },
   girls: {
     label: 'Girls Branch',
