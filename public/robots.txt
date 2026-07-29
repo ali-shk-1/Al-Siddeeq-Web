@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alsiddeeq.vercel.app/sitemap.xml
