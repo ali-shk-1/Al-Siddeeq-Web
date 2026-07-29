@@ -19,8 +19,8 @@ export const navLinks = [
 export const heroCounters = [
   { label: 'Years Experience', value: 15, suffix: '+' },
   { label: 'Board Results', value: 100, suffix: '%' },
-  { label: 'Montessori to Class 10', value: null, display: 'PG–10' },
-  { label: 'Trusted by Families', value: null, display: '100s' },
+  { label: 'Montessori to Class 10', value: null, display: 'PG to 10' },
+  { label: 'Trusted by Families', value: null, display: '100%' },
 ];
 
 export const aboutPoints = [
