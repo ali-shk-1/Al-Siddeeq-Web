@@ -58,13 +58,13 @@ const Hero = () => {
           </Reveal>
 
           <Reveal as="up" delay={0.5}>
-            <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8 max-w-2xl">
+            <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-8 max-w-2xl">
               {heroCounters.map((item, i) => (
                 <div key={i} className="min-w-0">
-                  <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-brand-blue dark:text-brand-emerald leading-tight whitespace-nowrap">
+                  <p className="text-2xl sm:text-3xl font-bold text-brand-blue dark:text-brand-emerald leading-tight">
                     {item.value !== null ? <Counter value={item.value} suffix={item.suffix} /> : item.display}
                   </p>
-                  <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">{item.label}</p>
+                  <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1 whitespace-nowrap">{item.label}</p>
                 </div>
               ))}
             </div>
