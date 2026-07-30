@@ -1,17 +1,12 @@
 import { Helmet } from 'react-helmet-async';
 
-const SEO = ({
-  title = 'Al Siddeeq Model High School | Rawalpindi',
-  description = 'Al Siddeeq Model High School, Rawalpindi — 15+ years of excellence from Montessori to Class 10, with 100% board results & strong character building.',
-  keywords = 'Al Siddeeq Model High School, best school in Rawalpindi, Montessori Rawalpindi, BISE Rawalpindi school, Khayaban-e-Sir Syed school',
-  canonical = 'https://alsiddeeq.vercel.app/',
-}) => {
+const SEO = () => {
   const schemaData = {
     '@context': 'https://schema.org',
     '@type': 'EducationalOrganization',
     name: 'Al Siddeeq Model High School',
-    description,
-    url: canonical,
+    description: 'Al Siddeeq Model High School, Rawalpindi — 15+ years of excellence from Montessori to Class 10, with 100% board results & strong character building.',
+    url: 'https://alsiddeeq.vercel.app/',
     address: [
       {
         '@type': 'PostalAddress',
@@ -31,23 +26,6 @@ const SEO = ({
 
   return (
     <Helmet>
-      <html lang="en" />
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      <meta name="robots" content="index, follow" />
-      <link rel="canonical" href={canonical} />
-
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:url" content={canonical} />
-      <meta property="og:locale" content="en_PK" />
-
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-
       <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
     </Helmet>
   );
