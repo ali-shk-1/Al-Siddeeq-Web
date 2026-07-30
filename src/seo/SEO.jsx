@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 
 const SEO = ({
   title = 'Al Siddeeq Model High School | Rawalpindi',
-  description = 'Al Siddeeq Model High School, Rawalpindi — over 15 years of excellence in education from Montessori to Class 10, with 100% board results and a strong focus on character building.',
+  description = 'Al Siddeeq Model High School, Rawalpindi — 15+ years of excellence from Montessori to Class 10, with 100% board results & strong character building.',
   keywords = 'Al Siddeeq Model High School, best school in Rawalpindi, Montessori Rawalpindi, BISE Rawalpindi school, Khayaban-e-Sir Syed school',
   canonical = 'https://alsiddeeq.vercel.app/',
 }) => {
